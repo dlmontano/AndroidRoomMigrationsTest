@@ -1,3 +1,64 @@
 <resources>
     <string name="app_name">RoomMigrationTest</string>
+    
+    <!--region General -->
+    <string name="lbl_date_time">%1$s/%2$s/%3$s %4$s:%5$s:%6$s</string>
+    <string name="lbl_latest_refresh_date">Últ. actual.: %1$s/%2$s/%3$s %4$s:%5$s:%6$s</string>
+    <string name="lbl_item_id">ID: %1$s</string>
+    <string name="lbl_item_name">Nombre: %1$s</string>
+    <string name="lbl_item_desc">Desc.: %1$s</string>
+    <string name="lbl_person_uuid">UUID persona: %1$s</string>
+    <string name="lbl_person_document_id">Doc ID pers.: %1$s</string>
+    <string name="lbl_survey_id">ID encuesta: %1$s</string>
+    <string name="lbl_is_active">Activo: %1$s</string>
+    <string name="lbl_question_name">Nombre preg.: %1$s</string>
+    <string name="lbl_question_id">ID pregunta: %1$d</string>
+    <string name="lbl_concept_id">ID concepto: %1$d</string>
+    <!--endregion-->
+    
+    <!--region Person -->
+    <string name="lbl_user_uuid">UUID: %1$s</string>
+    <string name="lbl_user_document_id">Doc ID: %1$s</string>
+    <string name="lbl_first_name">Primer nombre: %1$s</string>
+    <string name="lbl_second_name">Segundo nombre: %1$s</string>
+    <string name="lbl_first_last_name">Primer apellido: %1$s</string>
+    <string name="lbl_birth_date">Fecha nac.: %1$s/%2$s/%3$s</string>
+    <string name="lbl_gender">Sexo: %1$d</string>
+    <string name="lbl_has_to_change_psswd">Cambio contr.: %1$s</string>
+    <string name="lbl_token">Token: %1$s</string>
+    <!--endregion-->
+
+    <!--region Survey -->
+    <string name="lbl_start_date">Fecha inic.: %1$s/%2$s/%3$s %4$s:%5$s:%6$s</string>
+    <string name="lbl_type">Tipo: %1$d</string>
+    <string name="lbl_published">Publicado: %1$s</string>
+    <!--endregion-->
+
+    <!--region Survey Question -->
+    <string name="lbl_concept_class_id">ID clase conc.: %1$d</string>
+    <string name="lbl_concept_data_id">ID dato conc.: %1$d</string>
+    <string name="lbl_is_mandatory">Obligatorio: %1$s</string>
+    <!--endregion-->
+
+    <!--region Survey Question Coded Choice -->
+    <string name="lbl_locale">Ubicación: %1$s</string>
+    <string name="lbl_answer_concept_id">ID conc. resp.: %1$d</string>
+    <!--endregion-->
+
+    <!--region Survey Encounter -->
+    <string name="lbl_is_synchronized">Sincronizado: %1$s</string>
+    <!--endregion-->
+
+    <!--region Survey Question Answer -->
+    <string name="lbl_encounter_id">ID encuentro: %1$d</string>
+    <string name="lbl_answer_value">Valor resp.: %1$s</string>
+    <!--endregion-->
+
+    <!--region Measurement -->
+    <string name="lbl_bp_measurement">%1$d/%2$d mmHg</string>
+    <string name="lbl_hr_measurement">%1$d ppm</string>
+    <!--endregion-->
+    
+    <string name="lbl_yes">Sí</string>
+    <string name="lbl_no">No</string>
 </resources>

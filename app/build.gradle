@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.pammos.roommigrationtest"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -46,6 +46,11 @@ dependencies {
 
     // Gson
     implementation "com.google.code.gson:gson:$rootProject.gson_version"
+
+    // RxJava lib
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroid_version"
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjava2_version"
+    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$rootProject.rxjava2_adapter_version"
 
     // Testing
     testImplementation 'junit:junit:4.12'

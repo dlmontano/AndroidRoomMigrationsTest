@@ -16,6 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PeopleActivity" />
+        <activity android:name=".SurveysActivity" />
+        <activity android:name=".SurveyQuestionsActivity" />
+        <activity android:name=".SurveyQuestionAnswersActivity" />
+        <activity android:name=".SurveyQuestionCodedChoicesActivity" />
+        <activity android:name=".SurveyEncountersActivity" />
+        <activity android:name=".PeopleSurveysActivity" />
+        <activity android:name=".BPMsActivity" />
+        <activity android:name=".HRMsActivity"></activity>
     </application>
 
 </manifest>
