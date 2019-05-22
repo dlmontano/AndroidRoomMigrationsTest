@@ -16,4 +16,7 @@ public class BPMsActivity extends AppCompatActivity {
 
     public void addBPM(View view) {
     }
+
+    public void addMultipleBPMs(View view) {
+    }
 }

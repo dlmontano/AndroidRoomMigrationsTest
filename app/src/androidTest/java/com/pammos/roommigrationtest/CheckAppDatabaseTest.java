@@ -855,7 +855,7 @@ public class CheckAppDatabaseTest {
         createdSurvey.setStartDate("2019-01-01 00:00:00.000");
         createdSurvey.setSurveyDescription("Survey Description");
         createdSurvey.setSurveyName("Survey Name");
-        createdSurvey.setSurveyType(2);
+        createdSurvey.setSurveyType(1);
         createdSurvey.setPublished(true);
         createdSurvey.setActive(true);
         createdSurvey.setLatestRefreshDate(new Date());

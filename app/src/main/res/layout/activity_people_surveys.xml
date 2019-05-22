@@ -8,13 +8,28 @@
 
     <include layout="@layout/content_people_surveys" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/btn_act_pss_add_ps"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:onClick="addPersonSurvey"
-        app:srcCompat="@drawable/ic_add_item" />
+        android:orientation="vertical">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_act_pss_add_ps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:onClick="addPersonSurvey"
+            app:srcCompat="@drawable/ic_add_item" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_act_pss_add_multiple_pss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:onClick="addMultiplePeopleSurveys"
+            app:srcCompat="@drawable/ic_add_multiple_items" />
+
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

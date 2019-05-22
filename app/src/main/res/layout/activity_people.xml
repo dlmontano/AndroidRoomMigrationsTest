@@ -8,13 +8,28 @@
 
     <include layout="@layout/content_people" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/btn_act_people_add_person"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:onClick="addPerson"
-        app:srcCompat="@drawable/ic_add_item" />
+        android:orientation="vertical">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_act_people_add_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:onClick="addPerson"
+            app:srcCompat="@drawable/ic_add_item" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_act_people_add_multiple_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:onClick="addMultiplePeople"
+            app:srcCompat="@drawable/ic_add_multiple_items" />
+
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

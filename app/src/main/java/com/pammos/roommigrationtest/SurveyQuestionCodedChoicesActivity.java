@@ -16,4 +16,7 @@ public class SurveyQuestionCodedChoicesActivity extends AppCompatActivity {
 
     public void addSurveyQuestionCodedChoice(View view) {
     }
+
+    public void addSurveyQuestionCodedChoices(View view) {
+    }
 }

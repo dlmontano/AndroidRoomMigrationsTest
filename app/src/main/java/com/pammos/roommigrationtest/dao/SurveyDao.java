@@ -1,12 +1,14 @@
 package com.pammos.roommigrationtest.dao;
 
 import android.arch.lifecycle.LiveData;
+import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Query;
 
 import com.pammos.roommigrationtest.model.Survey;
 
 import java.util.List;
 
+@Dao
 public interface SurveyDao extends BaseDao<Survey> {
 
     @Query("SELECT * FROM surveys WHERE is_active = 1")

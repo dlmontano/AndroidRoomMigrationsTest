@@ -8,13 +8,28 @@
 
     <include layout="@layout/content_hrms" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/btn_act_hrms_add_bpm"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:onClick="addHRM"
-        app:srcCompat="@drawable/ic_add_item" />
+        android:orientation="vertical">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_act_hrms_add_hrm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:onClick="addHRM"
+            app:srcCompat="@drawable/ic_add_item" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_act_hrms_add_multiple_hrms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:onClick="addMultipleHRMs"
+            app:srcCompat="@drawable/ic_add_item" />
+
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

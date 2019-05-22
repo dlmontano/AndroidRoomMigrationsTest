@@ -1,6 +1,7 @@
 package com.pammos.roommigrationtest.dao;
 
 import android.arch.lifecycle.LiveData;
+import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Query;
 
 import com.pammos.roommigrationtest.model.BloodPressureMeasurement;
@@ -8,6 +9,7 @@ import com.pammos.roommigrationtest.model.BloodPressureMeasurement;
 import java.util.Date;
 import java.util.List;
 
+@Dao
 public interface BloodPressureMeasurementDao extends BaseDao<BloodPressureMeasurement> {
 
     @Query("SELECT * FROM bp_measurements ORDER BY timestamp DESC")

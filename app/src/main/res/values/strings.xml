@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">RoomMigrationTest</string>
-    
+
     <!--region General -->
     <string name="lbl_date_time">%1$s/%2$s/%3$s %4$s:%5$s:%6$s</string>
     <string name="lbl_latest_refresh_date">Últ. actual.: %1$s/%2$s/%3$s %4$s:%5$s:%6$s</string>
@@ -15,7 +15,7 @@
     <string name="lbl_question_id">ID pregunta: %1$d</string>
     <string name="lbl_concept_id">ID concepto: %1$d</string>
     <!--endregion-->
-    
+
     <!--region Person -->
     <string name="lbl_user_uuid">UUID: %1$s</string>
     <string name="lbl_user_document_id">Doc ID: %1$s</string>
@@ -58,7 +58,7 @@
     <string name="lbl_bp_measurement">%1$d/%2$d mmHg</string>
     <string name="lbl_hr_measurement">%1$d ppm</string>
     <!--endregion-->
-    
+
     <string name="lbl_yes">Sí</string>
     <string name="lbl_no">No</string>
 </resources>

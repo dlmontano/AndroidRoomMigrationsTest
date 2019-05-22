@@ -2,21 +2,12 @@ package com.pammos.roommigrationtest;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 
-public class PeopleActivity extends AppCompatActivity {
+public class AddSurveyActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_people);
-    }
-
-    public void addPerson(View view) {
-    }
-
-    public void addMultiplePeople(View view) {
+        setContentView(R.layout.activity_add_survey);
     }
 }

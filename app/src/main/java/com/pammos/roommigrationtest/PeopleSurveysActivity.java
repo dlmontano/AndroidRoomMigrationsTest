@@ -16,4 +16,7 @@ public class PeopleSurveysActivity extends AppCompatActivity {
 
     public void addPersonSurvey(View view) {
     }
+
+    public void addMultiplePeopleSurveys(View view) {
+    }
 }

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPersonSurveyActivity">
+
+    <TextView
+        android:id="@+id/tv_act_add_ps_person_uuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="UUID persona:"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_act_add_ps_person_uuid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner_act_add_ps_person_uuid" />
+
+    <TextView
+        android:id="@+id/tv_act_add_ps_person_document_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Doc. ID pers.:"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_act_add_ps_person_document_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner_act_add_ps_person_document_id" />
+
+    <TextView
+        android:id="@+id/tv_act_add_ps_survey_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="ID encuesta:"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_act_add_ps_survey_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner_act_add_ps_survey_id" />
+
+    <Spinner
+        android:id="@+id/spinner_act_add_ps_person_uuid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_act_add_ps_person_uuid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_act_add_ps_person_document_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_act_add_ps_person_uuid"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_act_add_ps_person_uuid" />
+
+    <Spinner
+        android:id="@+id/spinner_act_add_ps_survey_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_act_add_ps_person_uuid"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_act_add_ps_person_document_id" />
+
+    <ImageButton
+        android:id="@+id/ibtn_act_add_ps_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_act_add_ps_survey_id"
+        app:srcCompat="@drawable/ic_save" />
+
+    <ImageButton
+        android:id="@+id/ibtn_act_add_ps_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_act_add_ps_save"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_act_add_ps_survey_id"
+        app:srcCompat="@drawable/ic_delete" />
+
+    <ImageButton
+        android:id="@+id/ibtn_act_add_ps_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_act_add_ps_delete"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_act_add_ps_survey_id"
+        app:srcCompat="@drawable/ic_clear" />
+
+</android.support.constraint.ConstraintLayout>

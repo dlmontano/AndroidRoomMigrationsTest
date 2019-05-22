@@ -16,4 +16,7 @@ public class HRMsActivity extends AppCompatActivity {
 
     public void addHRM(View view) {
     }
+
+    public void addMultipleHRMs(View view) {
+    }
 }

@@ -1,6 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        RoomMigrationTest {
+            // These values must be set in the global gradle.properties file
+            // (~/.gradle/gradle.properties)
+            storeFile file(TEST_STORE_FILE)
+            storePassword TEST_STORE_PASSWORD
+            keyAlias TEST_ROOM_MIGRATION_KEY_ALIAS
+            keyPassword TEST_ROOM_MIGRATION_KEY_PASSWORD
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.pammos.roommigrationtest"
@@ -19,6 +29,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.RoomMigrationTest
         }
     }
     compileOptions {

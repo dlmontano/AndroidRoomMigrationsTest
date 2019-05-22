@@ -1,13 +1,15 @@
 package com.pammos.roommigrationtest.dao;
 
 import android.arch.lifecycle.LiveData;
+import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Query;
 
 import com.pammos.roommigrationtest.model.SurveyQuestionCodedChoice;
 
 import java.util.List;
 
-public interface SurveyQuestionCodedChoiceDao extends BaseDao {
+@Dao
+public interface SurveyQuestionCodedChoiceDao extends BaseDao<SurveyQuestionCodedChoice> {
 
     @Query("SELECT * FROM survey_question_coded_choices WHERE question_id = :questionId")
     LiveData<List<SurveyQuestionCodedChoice>> getReactiveSurveyQuestionCodedChoicesByQuestionId(int questionId);

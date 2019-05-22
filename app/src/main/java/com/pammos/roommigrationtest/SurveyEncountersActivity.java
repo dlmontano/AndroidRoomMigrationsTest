@@ -16,4 +16,7 @@ public class SurveyEncountersActivity extends AppCompatActivity {
 
     public void addSurveyEncounter(View view) {
     }
+
+    public void addMultipleSurveyEncounters(View view) {
+    }
 }

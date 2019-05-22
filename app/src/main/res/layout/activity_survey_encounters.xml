@@ -8,13 +8,28 @@
 
     <include layout="@layout/content_survey_encounters" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/btn_act_ses_add_se"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:onClick="addSurveyEncounter"
-        app:srcCompat="@drawable/ic_add_item" />
+        android:orientation="vertical">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_act_ses_add_se"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:onClick="addSurveyEncounter"
+            app:srcCompat="@drawable/ic_add_item" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_act_ses_add_multiple_ses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:onClick="addMultipleSurveyEncounters"
+            app:srcCompat="@drawable/ic_add_multiple_items" />
+
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

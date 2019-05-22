@@ -16,4 +16,7 @@ public class SurveyQuestionsActivity extends AppCompatActivity {
 
     public void addSurveyQuestion(View view) {
     }
+
+    public void addMultipleSurveyQuestions(View view) {
+    }
 }

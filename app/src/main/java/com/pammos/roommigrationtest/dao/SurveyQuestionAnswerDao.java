@@ -1,6 +1,7 @@
 package com.pammos.roommigrationtest.dao;
 
 import android.arch.lifecycle.LiveData;
+import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Query;
 
 import com.pammos.roommigrationtest.model.SurveyQuestionAnswer;
@@ -8,6 +9,7 @@ import com.pammos.roommigrationtest.model.SurveyQuestionAnswer;
 import java.util.Date;
 import java.util.List;
 
+@Dao
 public interface SurveyQuestionAnswerDao extends BaseDao<SurveyQuestionAnswer> {
 
     @Query("SELECT * FROM survey_question_answers")
