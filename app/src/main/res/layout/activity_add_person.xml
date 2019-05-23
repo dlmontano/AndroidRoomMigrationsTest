@@ -15,11 +15,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
             android:gravity="center_vertical"
             android:text="UUID:"
-            app:layout_constraintBottom_toTopOf="@+id/et_act_add_person_document_id"
+            app:layout_constraintBottom_toBottomOf="@+id/et_act_add_person_uuid"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/et_act_add_person_uuid" />
 
@@ -77,7 +75,8 @@
             android:text="Fecha nac.:"
             app:layout_constraintBottom_toBottomOf="@+id/et_act_add_person_birth_date"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/et_act_add_person_birth_date" />
+            app:layout_constraintTop_toTopOf="@+id/et_act_add_person_birth_date"
+            app:layout_constraintVertical_bias="0.666" />
 
         <TextView
             android:id="@+id/tv_act_add_person_gender"
@@ -232,6 +231,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/et_act_add_person_token"
             app:srcCompat="@drawable/ic_save" />

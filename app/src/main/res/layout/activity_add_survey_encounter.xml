@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSurveyEncounterActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_act_add_se_person_uuid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="UUID persona:"
+            app:layout_constraintBottom_toBottomOf="@+id/spin_act_add_se_person_uuid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spin_act_add_se_person_uuid" />
+
+        <TextView
+            android:id="@+id/tv_act_add_se_survey_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="ID encuesta:"
+            app:layout_constraintBottom_toBottomOf="@+id/spin_act_add_se_survey_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spin_act_add_se_survey_id" />
+
+        <TextView
+            android:id="@+id/tv_act_add_se_is_synchronized"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Sincronizado:"
+            app:layout_constraintBottom_toBottomOf="@+id/spin_act_add_se_is_synchronized"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spin_act_add_se_is_synchronized"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_act_add_se_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Nombre:"
+            app:layout_constraintBottom_toBottomOf="@+id/et_act_add_se_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_act_add_se_name" />
+
+        <Spinner
+            android:id="@+id/spin_act_add_se_person_uuid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_add_se_person_uuid"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spin_act_add_se_survey_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_add_se_person_uuid"
+            app:layout_constraintTop_toBottomOf="@+id/spin_act_add_se_person_uuid" />
+
+        <Spinner
+            android:id="@+id/spin_act_add_se_is_synchronized"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/yes_no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_add_se_person_uuid"
+            app:layout_constraintTop_toBottomOf="@+id/spin_act_add_se_survey_id" />
+
+        <EditText
+            android:id="@+id/et_act_add_se_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_add_se_person_uuid"
+            app:layout_constraintTop_toBottomOf="@+id/spin_act_add_se_is_synchronized" />
+
+        <ImageButton
+            android:id="@+id/ibtn_act_add_se_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_act_add_se_name"
+            app:srcCompat="@drawable/ic_save" />
+
+        <ImageButton
+            android:id="@+id/ibtn_act_add_se_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/ibtn_act_add_se_save"
+            app:layout_constraintTop_toBottomOf="@+id/et_act_add_se_name"
+            app:srcCompat="@drawable/ic_delete" />
+
+        <ImageButton
+            android:id="@+id/ibtn_act_add_se_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/ibtn_act_add_se_delete"
+            app:layout_constraintTop_toBottomOf="@+id/et_act_add_se_name"
+            app:srcCompat="@drawable/ic_clear" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

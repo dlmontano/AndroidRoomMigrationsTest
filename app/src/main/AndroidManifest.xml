@@ -27,7 +27,13 @@
         <activity android:name=".HRMsActivity" />
         <activity android:name=".AddPersonActivity" />
         <activity android:name=".AddSurveyActivity" />
-        <activity android:name=".AddPersonSurveyActivity"></activity>
+        <activity android:name=".AddPersonSurveyActivity" />
+        <activity android:name=".AddBPMActivity" />
+        <activity android:name=".AddHRMActivity" />
+        <activity android:name=".AddSurveyQuestionActivity" />
+        <activity android:name=".AddSurveyQuestionCodedChoiceActivity" />
+        <activity android:name=".AddSurveyEncounterActivity" />
+        <activity android:name=".AddSurveyQuestionAnswerActivity"></activity>
     </application>
 
 </manifest>

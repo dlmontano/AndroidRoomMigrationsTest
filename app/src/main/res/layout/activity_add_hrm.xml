@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddHRMActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_act_add_hrm_person_uuid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="UUID persona:"
+            app:layout_constraintBottom_toBottomOf="@+id/spin_act_add_hrm_person_uuid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spin_act_add_hrm_person_uuid" />
+
+        <TextView
+            android:id="@+id/tv_act_add_hrm_person_document_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Doc. ID pers.:"
+            app:layout_constraintBottom_toBottomOf="@+id/et_act_add_hrm_person_document_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_act_add_hrm_person_document_id" />
+
+        <TextView
+            android:id="@+id/tv_act_add_hrm_heartbeat_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Frec. cardiaca:"
+            app:layout_constraintBottom_toBottomOf="@+id/et_act_add_hrm_heartbeat_rate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_act_add_hrm_heartbeat_rate" />
+
+        <Spinner
+            android:id="@+id/spin_act_add_hrm_person_uuid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_add_hrm_heartbeat_rate"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_act_add_hrm_person_document_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_add_hrm_heartbeat_rate"
+            app:layout_constraintTop_toBottomOf="@+id/spin_act_add_hrm_person_uuid" />
+
+        <EditText
+            android:id="@+id/et_act_add_hrm_heartbeat_rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_add_hrm_heartbeat_rate"
+            app:layout_constraintTop_toBottomOf="@+id/et_act_add_hrm_person_document_id" />
+
+        <ImageButton
+            android:id="@+id/ibtn_act_add_hrm_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_act_add_hrm_heartbeat_rate"
+            app:srcCompat="@drawable/ic_save" />
+
+        <ImageButton
+            android:id="@+id/ibtn_act_add_hrm_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/ibtn_act_add_hrm_save"
+            app:layout_constraintTop_toBottomOf="@+id/et_act_add_hrm_heartbeat_rate"
+            app:srcCompat="@drawable/ic_delete" />
+
+        <ImageButton
+            android:id="@+id/ibtn_act_add_hrm_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/ibtn_act_add_hrm_delete"
+            app:layout_constraintTop_toBottomOf="@+id/et_act_add_hrm_heartbeat_rate"
+            app:srcCompat="@drawable/ic_clear" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
