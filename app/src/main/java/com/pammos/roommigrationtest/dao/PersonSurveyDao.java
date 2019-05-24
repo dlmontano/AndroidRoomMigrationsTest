@@ -13,6 +13,13 @@ import java.util.List;
 @Dao
 public interface PersonSurveyDao extends BaseDao<PersonSurvey> {
 
+    @Query("SELECT * FROM people_survey")
+    LiveData<List<PersonSurvey>> getReactiveAllPeopleSurveys();
+
+    @Query("SELECT * FROM people_survey WHERE survey_id = :surveyId AND person_UUID = :personUUID")
+    LiveData<PersonSurvey> getReactivePersonSurveyBySurveyIdAndPersonUUID(
+            int surveyId, String personUUID);
+
     @Query("SELECT p.* FROM people p" +
             " INNER JOIN people_survey ps ON p.UUID = ps.person_UUID" +
             " WHERE ps.survey_id = :surveyId")
@@ -45,6 +52,9 @@ public interface PersonSurveyDao extends BaseDao<PersonSurvey> {
             " WHERE ps.person_document_id = :personDocumentId" +
             " AND sq.name = 'Numeric'")
     LiveData<List<Survey>> getReactiveReportableSurveysByPersonDocumentId(String personDocumentId);
+
+    @Query("SELECT * FROM people_survey")
+    List<PersonSurvey> getAllPeopleSurveys();
 
     @Query("SELECT * FROM people_survey WHERE survey_id = :surveyId")
     List<PersonSurvey> getPersonSurveysBySurveyId(int surveyId);

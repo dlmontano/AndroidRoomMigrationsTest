@@ -12,8 +12,8 @@ import java.util.List;
 @Dao
 public interface BloodPressureMeasurementDao extends BaseDao<BloodPressureMeasurement> {
 
-    @Query("SELECT * FROM bp_measurements ORDER BY timestamp DESC")
-    LiveData<List<BloodPressureMeasurement>> getAllBPMs();
+    @Query("SELECT * FROM bp_measurements")
+    LiveData<List<BloodPressureMeasurement>> getReactiveAllBPMs();
 
     @Query("SELECT * FROM bp_measurements" +
             " WHERE person_UUID = :personUUID" +
@@ -29,6 +29,12 @@ public interface BloodPressureMeasurementDao extends BaseDao<BloodPressureMeasur
     LiveData<List<BloodPressureMeasurement>> getBPMsByDocumentPersonIdAndDateRange(
             String personDocumentId, Date startDate, Date endDate);
 
+    @Query("SELECT * FROM bp_measurements" +
+            " WHERE person_UUID = :personUUID" +
+            " AND timestamp = :timestamp")
+    LiveData<BloodPressureMeasurement> getReactiveBPMByPersonUUIDAndTimestamp(
+            String personUUID, Date timestamp);
+
     @Query("SELECT timestamp FROM bp_measurements" +
             " WHERE person_UUID = :personUUID" +
             " ORDER BY timestamp DESC" +
@@ -41,8 +47,15 @@ public interface BloodPressureMeasurementDao extends BaseDao<BloodPressureMeasur
             " LIMIT 1")
     LiveData<Date> getLatestBPMDateByPersonDocumentId(String personDocumentId);
 
-
     @Query("SELECT COUNT(*) FROM bp_measurements" +
             " WHERE person_UUID = :personUUID")
     LiveData<Integer> getCountMeasureByPerson(String personUUID);
+
+    @Query("SELECT * FROM bp_measurements")
+    List<BloodPressureMeasurement> getAllBPMs();
+
+    @Query("SELECT * FROM bp_measurements" +
+            " WHERE person_UUID = :personUUID" +
+            " AND timestamp = :timestamp")
+    BloodPressureMeasurement getBPMByPersonUUIDAndTimestamp(String personUUID, Date timestamp);
 }

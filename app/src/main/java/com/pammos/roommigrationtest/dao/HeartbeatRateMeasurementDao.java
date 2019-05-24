@@ -12,8 +12,14 @@ import java.util.List;
 @Dao
 public interface HeartbeatRateMeasurementDao extends BaseDao<HeartbeatRateMeasurement> {
 
-    @Query("SELECT * FROM hr_measurements ORDER BY timestamp DESC")
-    LiveData<List<HeartbeatRateMeasurement>> getAllHRMs();
+    @Query("SELECT * FROM hr_measurements")
+    LiveData<List<HeartbeatRateMeasurement>> getReactiveAllHRMs();
+
+    @Query("SELECT * FROM hr_measurements" +
+            " WHERE person_UUID = :personUUID" +
+            " AND timestamp = :timestamp")
+    LiveData<HeartbeatRateMeasurement> getReactiveHRMByPersonUUIDAndTimestamp(
+            String personUUID, Date timestamp);
 
     @Query("SELECT * FROM hr_measurements" +
             " WHERE person_UUID = :personUUID" +
@@ -41,8 +47,15 @@ public interface HeartbeatRateMeasurementDao extends BaseDao<HeartbeatRateMeasur
             " LIMIT 1")
     LiveData<Date> getLatestHRMDateByPersonDocumentId(String personDocumentId);
 
-
     @Query("SELECT COUNT(*) FROM hr_measurements" +
             " WHERE person_UUID = :personUUID")
     LiveData<Integer> getCountMeasureByPerson(String personUUID);
+
+    @Query("SELECT * FROM hr_measurements")
+    List<HeartbeatRateMeasurement> getAllHRMs();
+
+    @Query("SELECT * FROM hr_measurements" +
+            " WHERE person_UUID = :personUUID" +
+            " AND timestamp = :timestamp")
+    HeartbeatRateMeasurement getHRMByPersonUUIDAndTimestamp(String personUUID, Date timestamp);
 }
