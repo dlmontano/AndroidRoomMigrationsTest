@@ -11,6 +11,9 @@ import java.util.List;
 @Dao
 public interface SurveyQuestionCodedChoiceDao extends BaseDao<SurveyQuestionCodedChoice> {
 
+    @Query("SELECT * FROM survey_question_coded_choices")
+    LiveData<List<SurveyQuestionCodedChoice>> getAllReactiveSurveyQuestionCodedChoices();
+
     @Query("SELECT * FROM survey_question_coded_choices WHERE question_id = :questionId")
     LiveData<List<SurveyQuestionCodedChoice>> getReactiveSurveyQuestionCodedChoicesByQuestionId(int questionId);
 
@@ -19,6 +22,9 @@ public interface SurveyQuestionCodedChoiceDao extends BaseDao<SurveyQuestionCode
 
     @Query("SELECT * FROM survey_question_coded_choices WHERE survey_id = :surveyId")
     LiveData<List<SurveyQuestionCodedChoice>> getReactiveSurveyQuestionCodedChoiceBySurveyId(int surveyId);
+
+    @Query("SELECT * FROM survey_question_coded_choices")
+    List<SurveyQuestionCodedChoice> getAllSurveyQuestionCodedChoices();
 
     @Query("SELECT * FROM survey_question_coded_choices WHERE question_id = :questionId")
     List<SurveyQuestionCodedChoice> getSurveyQuestionCodedChoicesByQuestionId(int questionId);

@@ -17,6 +17,9 @@ public interface SurveyEncounterDao extends BaseDao<SurveyEncounter> {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     long saveForKey(SurveyEncounter surveyEncounter);
 
+    @Query("SELECT * FROM survey_encounters")
+    LiveData<List<SurveyEncounter>> getAllReactiveSurveyEncounters();
+
     @Query("SELECT * FROM survey_encounters WHERE person_UUID = :personUUID")
     LiveData<List<SurveyEncounter>> getReactiveSurveyEncountersByPersonUUID(String personUUID);
 
@@ -54,6 +57,9 @@ public interface SurveyEncounterDao extends BaseDao<SurveyEncounter> {
     @Query("SELECT * FROM survey_encounters WHERE id = :surveyEncounterId")
     LiveData<SurveyEncounter> getReactiveSurveyEncounterById(long surveyEncounterId);
 
+    @Query("SELECT * FROM survey_encounters")
+    List<SurveyEncounter> getAllSurveyEncounters();
+
     @Query("SELECT *" +
             " FROM survey_encounters" +
             " WHERE is_synchronized = 0" +
@@ -62,4 +68,14 @@ public interface SurveyEncounterDao extends BaseDao<SurveyEncounter> {
 
     @Query("SELECT * FROM survey_encounters WHERE id = :surveyEncounterId")
     SurveyEncounter getSurveyEncounterById(long surveyEncounterId);
+
+    @Query("SELECT * FROM survey_encounters WHERE person_UUID = :personUUID")
+    List<SurveyEncounter> getSurveyEncountersByPersonUUID(String personUUID);
+
+    @Query("SELECT *" +
+            " FROM survey_encounters" +
+            " WHERE person_UUID = :personUUID" +
+            " AND survey_id = :surveyId")
+    List<SurveyEncounter> getSurveyEncountersByPersonUUIDAndSurveyId(String personUUID,
+                                                                     int surveyId);
 }

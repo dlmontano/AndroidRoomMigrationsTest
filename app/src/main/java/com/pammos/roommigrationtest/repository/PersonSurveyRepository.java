@@ -6,6 +6,7 @@ import android.arch.lifecycle.LiveData;
 import com.pammos.roommigrationtest.dao.PersonSurveyDao;
 import com.pammos.roommigrationtest.database.CheckAppRoomDatabase;
 import com.pammos.roommigrationtest.model.PersonSurvey;
+import com.pammos.roommigrationtest.model.Survey;
 
 import java.util.List;
 
@@ -28,6 +29,16 @@ public class PersonSurveyRepository extends BaseRepository<PersonSurvey> {
             int surveyId, String personUUID) {
 
         return psDao.getReactivePersonSurveyBySurveyIdAndPersonUUID(surveyId, personUUID);
+    }
+
+    public LiveData<List<Survey>> getSurveysByPersonUUIDLiveData(String personUUID) {
+
+        return psDao.getReactiveSurveysByPersonUUID(personUUID);
+    }
+
+    public LiveData<List<Survey>> getSurveysByPersonDocumentIdLiveData(String personUUID) {
+
+        return psDao.getReactiveSurveysByPersonUUID(personUUID);
     }
 
     public List<PersonSurvey> getCurrentPeopleSurveys() {

@@ -27,6 +27,16 @@ public interface PersonSurveyDao extends BaseDao<PersonSurvey> {
 
     @Query("SELECT s.* FROM surveys s" +
             " INNER JOIN people_survey ps ON s.id = ps.survey_id" +
+            " WHERE ps.person_UUID = :personUUID")
+    LiveData<List<Survey>> getReactiveSurveysByPersonUUID(String personUUID);
+
+    @Query("SELECT s.* FROM surveys s" +
+            " INNER JOIN people_survey ps ON s.id = ps.survey_id" +
+            " WHERE ps.person_document_id = :personDocumentId")
+    LiveData<List<Survey>> getReactiveSurveysByPersonDocumentId(String personDocumentId);
+
+    @Query("SELECT s.* FROM surveys s" +
+            " INNER JOIN people_survey ps ON s.id = ps.survey_id" +
             " WHERE ps.person_UUID = :personUUID" +
             " AND s.is_active = 1" +
             " AND s.type = 1")
@@ -72,6 +82,16 @@ public interface PersonSurveyDao extends BaseDao<PersonSurvey> {
             " INNER JOIN people_survey ps ON p.UUID = ps.person_UUID" +
             " WHERE ps.survey_id = :surveyId")
     List<Person> getPeopleBySurveyId(int surveyId);
+
+    @Query("SELECT s.* FROM surveys s" +
+            " INNER JOIN people_survey ps ON s.id = ps.survey_id" +
+            " WHERE ps.person_UUID = :personUUID")
+    List<Survey> getSurveysByPersonUUID(String personUUID);
+
+    @Query("SELECT s.* FROM surveys s" +
+            " INNER JOIN people_survey ps ON s.id = ps.survey_id" +
+            " WHERE ps.person_document_id = :personDocumentId")
+    List<Survey> getSurveysByDocumentId(String personDocumentId);
 
     @Query("SELECT s.* FROM surveys s" +
             " INNER JOIN people_survey ps ON s.id = ps.survey_id" +

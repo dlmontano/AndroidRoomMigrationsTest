@@ -42,7 +42,7 @@ public abstract class BaseRepository<T> {
     }
 
     void save(BaseDao baseDao, T... objects) {
-        Completable.fromAction(() -> baseDao.delete(objects))
+        Completable.fromAction(() -> baseDao.save(objects))
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new CompletableObserver() {

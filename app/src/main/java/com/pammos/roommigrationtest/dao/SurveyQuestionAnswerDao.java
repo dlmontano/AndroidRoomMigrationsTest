@@ -36,6 +36,9 @@ public interface SurveyQuestionAnswerDao extends BaseDao<SurveyQuestionAnswer> {
     @Query("SELECT * FROM survey_question_answers WHERE id = :surveyQuestionAnswerId")
     LiveData<SurveyQuestionAnswer> getReactiveSurveyQuestionAnswerById(long surveyQuestionAnswerId);
 
+    @Query("SELECT * FROM survey_question_answers")
+    List<SurveyQuestionAnswer> getAllSurveyQuestionAnswers();
+
     @Query("SELECT * FROM survey_question_answers WHERE encounter_id = :encounterId")
     List<SurveyQuestionAnswer> getSurveyQuestionAnswersByEncounterId(long encounterId);
 
