@@ -33,7 +33,10 @@
         <activity android:name=".AddSurveyQuestionActivity" />
         <activity android:name=".AddSurveyQuestionCodedChoiceActivity" />
         <activity android:name=".AddSurveyEncounterActivity" />
-        <activity android:name=".AddSurveyQuestionAnswerActivity"></activity>
+        <activity android:name=".AddSurveyQuestionAnswerActivity" />
+        <activity android:name=".PersonDetailsActivity" />
+        <activity android:name=".SurveyDetailsActivity" />
+        <activity android:name=".PersonSurveyDetailsActivity"></activity>
     </application>
 
 </manifest>

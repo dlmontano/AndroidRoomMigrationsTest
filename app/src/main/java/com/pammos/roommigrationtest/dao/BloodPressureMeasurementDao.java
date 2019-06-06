@@ -16,6 +16,15 @@ public interface BloodPressureMeasurementDao extends BaseDao<BloodPressureMeasur
     LiveData<List<BloodPressureMeasurement>> getReactiveAllBPMs();
 
     @Query("SELECT * FROM bp_measurements" +
+            " WHERE person_UUID = :personUUID")
+    LiveData<List<BloodPressureMeasurement>> getReactiveBPMsByPersonUUID(String personUUID);
+
+    @Query("SELECT * FROM bp_measurements" +
+            " WHERE person_document_id = :personDocumentId")
+    LiveData<List<BloodPressureMeasurement>> getReactiveBPMsByPersonDocumentId(
+            String personDocumentId);
+
+    @Query("SELECT * FROM bp_measurements" +
             " WHERE person_UUID = :personUUID" +
             " AND timestamp BETWEEN :startDate AND :endDate" +
             " ORDER BY timestamp DESC")

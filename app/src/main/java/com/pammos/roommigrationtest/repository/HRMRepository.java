@@ -25,6 +25,17 @@ public class HRMRepository extends BaseRepository<HeartbeatRateMeasurement> {
         return hrmDao.getReactiveAllHRMs();
     }
 
+    public LiveData<List<HeartbeatRateMeasurement>> getHRMsByPersonUUIDLiveData(String personUUID) {
+
+        return hrmDao.getReactiveHRMsByPersonUUID(personUUID);
+    }
+
+    public LiveData<List<HeartbeatRateMeasurement>> getHRMsByPersonDocumentIdLiveData(
+            String personDocumentId) {
+
+        return hrmDao.getReactiveHRMsByPersonUUID(personDocumentId);
+    }
+
     public LiveData<HeartbeatRateMeasurement> getHRMByPersonUUIDAndTimestampLiveData(
             String personUUID, Date timestamp) {
 

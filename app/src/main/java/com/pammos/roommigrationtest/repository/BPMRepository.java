@@ -25,6 +25,17 @@ public class BPMRepository extends BaseRepository<BloodPressureMeasurement> {
         return bpmDao.getReactiveAllBPMs();
     }
 
+    public LiveData<List<BloodPressureMeasurement>> getBPMsByPersonUUIDLiveData(String personUUID) {
+
+        return bpmDao.getReactiveBPMsByPersonUUID(personUUID);
+    }
+
+    public LiveData<List<BloodPressureMeasurement>> getBPMsByPersonDocumentIdLiveData(
+            String personDocumentId) {
+
+        return bpmDao.getReactiveBPMsByPersonDocumentId(personDocumentId);
+    }
+
     public LiveData<BloodPressureMeasurement> getBPMByPersonUUIDAndTimestampLiveData(
             String personUUID, Date timestamp) {
 

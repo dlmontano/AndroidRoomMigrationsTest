@@ -22,6 +22,15 @@ public interface HeartbeatRateMeasurementDao extends BaseDao<HeartbeatRateMeasur
             String personUUID, Date timestamp);
 
     @Query("SELECT * FROM hr_measurements" +
+            " WHERE person_UUID = :personUUID")
+    LiveData<List<HeartbeatRateMeasurement>> getReactiveHRMsByPersonUUID(String personUUID);
+
+    @Query("SELECT * FROM hr_measurements" +
+            " WHERE person_document_id = :personDocumentId")
+    LiveData<List<HeartbeatRateMeasurement>> getReactiveHRMsByPersonDocumentId(
+            String personDocumentId);
+
+    @Query("SELECT * FROM hr_measurements" +
             " WHERE person_UUID = :personUUID" +
             " AND timestamp BETWEEN :startDate AND :endDate" +
             " ORDER BY timestamp DESC")
