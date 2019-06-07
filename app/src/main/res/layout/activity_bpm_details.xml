@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BPMDetailsActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_lbl_person_uuid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="UUID pers.:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_bpm_details_person_uuid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_bpm_details_person_uuid" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_lbl_person_document_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="ID doc. pers.:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_bpm_details_person_document_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_bpm_details_person_document_id" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_lbl_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Marca de tiempo:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_bpm_details_"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_bpm_details_" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_lbl_sys_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Presión sistólica:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_bpm_details_sys_pressure"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_bpm_details_sys_pressure" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_lbl_dias_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Presión diastólica:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_bpm_details_dias_pressure"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_bpm_details_dias_pressure" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_person_uuid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_bpm_details_lbl_dias_pressure"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_person_document_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_bpm_details_lbl_dias_pressure"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_bpm_details_person_uuid" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_bpm_details_lbl_dias_pressure"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_bpm_details_person_document_id" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_sys_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_bpm_details_lbl_dias_pressure"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_bpm_details_" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_dias_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_bpm_details_lbl_dias_pressure"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_bpm_details_sys_pressure" />
+
+        <View
+            android:id="@+id/div_act_bpm_details_bpm_data"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_bpm_details_dias_pressure" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_lbl_person_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Primer nombre:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_bpm_details_person_first_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_bpm_details_person_first_name" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_lbl_person_second_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Segundo nombre:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_bpm_details_person_second_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_bpm_details_person_second_name" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_lbl_person_first_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Primer apellido:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_bpm_details_person_first_last_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_bpm_details_person_first_last_name" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_lbl_person_birth_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Fecha nac.:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_bpm_details_person_birth_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_bpm_details_person_birth_date" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_lbl_person_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Sexo:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_bpm_details_person_gender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_bpm_details_person_gender" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_lbl_person_has_to_change_passwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Cambio contr.:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_bpm_details_person_has_to_change_passwd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_bpm_details_person_has_to_change_passwd" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_lbl_person_token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Token:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_bpm_details_person_token"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_bpm_details_person_token" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_lbl_person_latest_refresh_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Fecha ult. actual.:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_bpm_details_person_latest_refresh_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_bpm_details_person_latest_refresh_date" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_person_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_bpm_details_lbl_dias_pressure"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_bpm_details_bpm_data" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_person_second_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_bpm_details_lbl_dias_pressure"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_bpm_details_person_first_name" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_person_first_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_bpm_details_lbl_dias_pressure"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_bpm_details_person_second_name" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_person_birth_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_bpm_details_lbl_dias_pressure"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_bpm_details_person_first_last_name" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_person_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_bpm_details_lbl_dias_pressure"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_bpm_details_person_birth_date" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_person_has_to_change_passwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_bpm_details_lbl_dias_pressure"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_bpm_details_person_gender" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_person_token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_bpm_details_person_has_to_change_passwd"
+            tools:layout_editor_absoluteX="137dp" />
+
+        <TextView
+            android:id="@+id/tv_act_bpm_details_person_latest_refresh_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_bpm_details_person_token"
+            tools:layout_editor_absoluteX="137dp" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
