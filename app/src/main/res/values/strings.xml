@@ -23,7 +23,7 @@
     <string name="lbl_second_name">Segundo nombre: %1$s</string>
     <string name="lbl_first_last_name">Primer apellido: %1$s</string>
     <string name="lbl_birth_date">Fecha nac.: %1$s/%2$s/%3$s</string>
-    <string name="lbl_gender">Sexo: %1$d</string>
+    <string name="lbl_gender">Sexo: %1$s</string>
     <string name="lbl_has_to_change_psswd">Cambio contr.: %1$s</string>
     <string name="lbl_token">Token: %1$s</string>
     <!--endregion-->
@@ -61,4 +61,7 @@
 
     <string name="lbl_yes">Sí</string>
     <string name="lbl_no">No</string>
+
+    <string name="lbl_female">Femenino</string>
+    <string name="lbl_male">Masculino</string>
 </resources>
