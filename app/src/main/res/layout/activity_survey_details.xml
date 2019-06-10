@@ -204,7 +204,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_act_survey_details_lbl_sqs" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_survey_details_lbl_sqs"
+            tools:listitem="@layout/card_view_survey_question_answer_cell_item" />
 
         <View
             android:id="@+id/div_act_survey_details_sqs"
@@ -240,7 +241,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_act_survey_details_sqs" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_survey_details_sqs"
+            tools:listitem="@layout/card_view_survey_encounter_cell_item" />
 
         <View
             android:id="@+id/div_act_survey_details_ses"
@@ -279,6 +281,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_act_survey_details_people" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_survey_details_people"
+            tools:listitem="@layout/card_view_person_cell_item" />
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

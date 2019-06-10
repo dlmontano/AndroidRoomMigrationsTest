@@ -1,41 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    app:cardCornerRadius="1dp"
+    app:cardElevation="15dp">
 
-    <TextView
-        android:id="@+id/tv_card_view_survey_cell_id"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lbl_item_id" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_card_view_survey_cell_type"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lbl_type" />
+        <TextView
+            android:id="@+id/tv_card_view_survey_cell_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_item_id" />
 
-    <TextView
-        android:id="@+id/tv_card_view_survey_cell_is_active"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lbl_is_active" />
+        <TextView
+            android:id="@+id/tv_card_view_survey_cell_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_type" />
 
-    <TextView
-        android:id="@+id/tv_card_view_survey_cell_published"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lbl_published" />
+        <TextView
+            android:id="@+id/tv_card_view_survey_cell_is_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_is_active" />
 
-    <TextView
-        android:id="@+id/tv_card_view_survey_cell_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lbl_item_name" />
+        <TextView
+            android:id="@+id/tv_card_view_survey_cell_published"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_published" />
 
-    <TextView
-        android:id="@+id/tv_card_view_survey_cell_desc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lbl_item_desc" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/tv_card_view_survey_cell_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_item_name" />
+
+        <TextView
+            android:id="@+id/tv_card_view_survey_cell_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_item_desc" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

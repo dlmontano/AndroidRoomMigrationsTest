@@ -426,7 +426,8 @@
             android:scrollbars="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_act_sq_details_sqccs" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_sq_details_sqccs"
+            tools:listitem="@layout/card_view_survey_question_coded_choice_cell_item" />
 
         <View
             android:id="@+id/div_act_sq_details_sqccs"
@@ -465,6 +466,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_act_sq_details_sqas"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.0"
+            tools:listitem="@layout/card_view_survey_question_answer_cell_item" />
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

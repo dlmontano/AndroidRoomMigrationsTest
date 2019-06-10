@@ -244,7 +244,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_act_person_details_lbl_surveys" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_person_details_lbl_surveys"
+            tools:listitem="@layout/card_view_survey_cell_item" />
 
         <View
             android:id="@+id/div_act_person_details_surveys"
@@ -280,7 +281,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_act_person_details_lbl_ses" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_person_details_lbl_ses"
+            tools:listitem="@layout/card_view_survey_encounter_cell_item" />
 
         <View
             android:id="@+id/div_act_person_details_ses"
@@ -316,7 +318,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_act_person_details_lbl_bpms" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_person_details_lbl_bpms"
+            tools:listitem="@layout/card_view_bpm_cell_item" />
 
         <View
             android:id="@+id/div_act_person_details_bpms"
@@ -355,7 +358,8 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_act_person_details_lbl_hrms"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="1.0"
+            tools:listitem="@layout/card_view_hrm_cell_item" />
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
