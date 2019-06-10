@@ -8,7 +8,7 @@
     <string name="lbl_item_name">Nombre: %1$s</string>
     <string name="lbl_item_desc">Desc.: %1$s</string>
     <string name="lbl_person_uuid">UUID persona: %1$s</string>
-    <string name="lbl_person_document_id">Doc ID pers.: %1$s</string>
+    <string name="lbl_person_document_id">Doc. ID pers.: %1$s</string>
     <string name="lbl_survey_id">ID encuesta: %1$s</string>
     <string name="lbl_is_active">Activo: %1$s</string>
     <string name="lbl_question_name">Nombre preg.: %1$s</string>
@@ -18,7 +18,7 @@
 
     <!--region Person -->
     <string name="lbl_user_uuid">UUID: %1$s</string>
-    <string name="lbl_user_document_id">Doc ID: %1$s</string>
+    <string name="lbl_user_document_id">Doc. ID: %1$s</string>
     <string name="lbl_first_name">Primer nombre: %1$s</string>
     <string name="lbl_second_name">Segundo nombre: %1$s</string>
     <string name="lbl_first_last_name">Primer apellido: %1$s</string>

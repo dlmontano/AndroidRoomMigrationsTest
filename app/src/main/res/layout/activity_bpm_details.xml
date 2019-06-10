@@ -123,6 +123,17 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_act_bpm_details_dias_pressure" />
 
         <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Persona"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_bpm_details_bpm_data" />
+
+        <TextView
             android:id="@+id/tv_act_bpm_details_lbl_person_first_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -210,7 +221,7 @@
             android:layout_marginTop="8dp"
             android:text="TextView"
             app:layout_constraintStart_toEndOf="@+id/tv_act_bpm_details_lbl_dias_pressure"
-            app:layout_constraintTop_toBottomOf="@+id/div_act_bpm_details_bpm_data" />
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
             android:id="@+id/tv_act_bpm_details_person_second_name"

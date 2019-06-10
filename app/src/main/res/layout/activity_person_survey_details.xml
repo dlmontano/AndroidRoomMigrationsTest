@@ -118,10 +118,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="TextView"
             app:layout_constraintStart_toEndOf="@+id/tv_act_ps_details_lbl_person_latest_refresh_date"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_ps_details_lbl_person" />
 
         <TextView
             android:id="@+id/tv_act_ps_details_person_document_id"
@@ -227,6 +227,17 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_act_ps_details_latest_refresh_date" />
 
         <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Encuesta"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_ps_details_person_data" />
+
+        <TextView
             android:id="@+id/tv_act_ps_details_lbl_survey_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -314,7 +325,7 @@
             android:layout_marginTop="8dp"
             android:text="TextView"
             app:layout_constraintStart_toEndOf="@+id/tv_act_ps_details_lbl_survey_latest_refresh_date"
-            app:layout_constraintTop_toBottomOf="@+id/div_act_ps_details_person_data" />
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <TextView
             android:id="@+id/tv_act_ps_details_survey_start_date"
@@ -387,6 +398,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tv_act_ps_details_lbl_survey_latest_refresh_date"
             app:layout_constraintTop_toBottomOf="@+id/tv_act_ps_details_survey_is_active" />
+
+        <TextView
+            android:id="@+id/tv_act_ps_details_lbl_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Persona"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

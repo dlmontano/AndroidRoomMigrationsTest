@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_card_view_person_cell_uuid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_user_uuid" />
+
+    <TextView
+        android:id="@+id/tv_card_view_person_cell_document_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_user_document_id" />
+
+    <TextView
+        android:id="@+id/tv_card_view_person_cell_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_first_name" />
+
+    <TextView
+        android:id="@+id/tv_card_view_person_cell_first_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_first_last_name" />
+
+    <TextView
+        android:id="@+id/tv_card_view_person_cell_birth_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_birth_date" />
+
+    <TextView
+        android:id="@+id/tv_card_view_person_cell_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_gender" />
+</LinearLayout>

@@ -1,9 +1,580 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SurveyEncounterDetailsActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="ID:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_id" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_survey_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="ID encuesta:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_survey_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_survey_id" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Marca de tiempo:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_timestamp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_timestamp" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_is_synchronized"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Sincronizado"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_is_synchronized"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_is_synchronized" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Nombre:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_name" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_person_uuid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="UUID pers.:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_person_uuid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_person_uuid" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_survey_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_id" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_survey_id" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_is_synchronized"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_timestamp" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_is_synchronized" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_person_uuid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_name" />
+
+        <View
+            android:id="@+id/div_act_se_details_se_data"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_person_uuid" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_survey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Encuesta"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_se_details_se_data" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_survey_id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="ID enc.:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_survey_id2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_survey_id2" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_survey_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Fecha inic.:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_survey_start_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_survey_start_date" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_survey_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Desc.:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_survey_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_survey_desc" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_survey_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Nombre:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_survey_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_survey_name" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_survey_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Tipo:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_survey_type"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_survey_type" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_survey_published"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Publicada:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_survey_published"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_survey_published" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_survey_is_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Activa:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_survey_is_active"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_survey_is_active" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_survey_latest_refresh_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Fecha ult. actual.:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_survey_latest_refresh_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_survey_latest_refresh_date" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_survey_id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_lbl_survey" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_survey_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_survey_id2" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_survey_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_survey_start_date" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_survey_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_survey_desc" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_survey_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_survey_name" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_survey_published"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_survey_type" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_survey_is_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_survey_published" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_survey_latest_refresh_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_survey_is_active" />
+
+        <View
+            android:id="@+id/div_act_se_details_survey_data"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_survey_latest_refresh_date" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Persona"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_se_details_survey_data" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_person_uuid2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="UUID pers.:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_person_uuid2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_person_uuid2" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_person_document_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Doc. ID pers.:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_person_document_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_person_document_id" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_person_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Primer nombre:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_person_first_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_person_first_name" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_person_second_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Segundo nombre:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_person_second_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_person_second_name" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_person_first_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Primer apellido:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_person_first_last_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_person_first_last_name" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_person_birth_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Fecha nac.:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_person_birth_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_person_birth_date" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_person_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Sexo:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_person_gender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_person_gender" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_person_has_to_change_psswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Cambio contr.:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_person_has_to_change_psswd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_person_has_to_change_psswd" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_person_token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Token:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_person_token"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_person_token" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_person_latest_refresh_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Fecha ult. actual.:"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_act_se_details_person_latest_refresh_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_se_details_person_latest_refresh_date" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_person_uuid2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_lbl_person" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_person_document_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_person_uuid2" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_person_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_person_document_id" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_person_second_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_person_first_name" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_person_first_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_person_second_name" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_person_birth_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_person_first_last_name" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_person_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_person_birth_date" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_person_has_to_change_psswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_person_gender" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_person_token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_person_has_to_change_psswd" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_person_latest_refresh_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/tv_act_se_details_lbl_person_second_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_person_token" />
+
+        <View
+            android:id="@+id/div_act_se_details_person_data"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_person_latest_refresh_date" />
+
+        <TextView
+            android:id="@+id/tv_act_se_details_lbl_sqas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Respuestas"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_se_details_person_data" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_act_se_details_sqas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:scrollbars="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_se_details_lbl_sqas"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

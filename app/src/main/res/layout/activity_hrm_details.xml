@@ -103,6 +103,17 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_act_hrm_details_heartbeat_rate" />
 
         <TextView
+            android:id="@+id/tv_act_hrm_details_lbl_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Persona"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_hrm_details_hrm_data" />
+
+        <TextView
             android:id="@+id/tv_act_hrm_details_lbl_person_first_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -190,7 +201,7 @@
             android:layout_marginTop="8dp"
             android:text="TextView"
             app:layout_constraintStart_toEndOf="@+id/tv_act_hrm_details_lbl_heratbeat_rate"
-            app:layout_constraintTop_toBottomOf="@+id/div_act_hrm_details_hrm_data" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_hrm_details_lbl_person" />
 
         <TextView
             android:id="@+id/tv_act_hrm_details_person_second_name"

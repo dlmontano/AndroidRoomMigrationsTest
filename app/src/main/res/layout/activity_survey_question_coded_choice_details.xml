@@ -183,6 +183,17 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_act_sqcc_details_latest_refresh_date" />
 
         <TextView
+            android:id="@+id/tv_act_sqcc_details_lbl_sq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Pregunta"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_sqcc_details_sqcc_data" />
+
+        <TextView
             android:id="@+id/tv_act_sqcc_details_lbl_sq_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -266,10 +277,11 @@
             android:id="@+id/tv_act_sqcc_details_lbl_sq_latest_refresh_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:text="Fecha ult. actual.:"
             app:layout_constraintBottom_toBottomOf="@+id/tv_act_sqcc_details_sq_latest_refresh_date"
-            app:layout_constraintTop_toTopOf="@+id/tv_act_sqcc_details_sq_latest_refresh_date"
-            tools:layout_editor_absoluteX="16dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_act_sqcc_details_sq_latest_refresh_date" />
 
         <TextView
             android:id="@+id/tv_act_sqcc_details_sq_id"
@@ -279,7 +291,7 @@
             android:layout_marginTop="8dp"
             android:text="TextView"
             app:layout_constraintStart_toEndOf="@+id/tv_act_sqcc_details_lbl_answer_concept_id"
-            app:layout_constraintTop_toBottomOf="@+id/div_act_sqcc_details_sqcc_data" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_sqcc_details_lbl_sq" />
 
         <TextView
             android:id="@+id/tv_act_sqcc_details_sq_question_name"

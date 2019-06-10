@@ -182,6 +182,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_act_survey_details_latest_refresh_date" />
 
+        <TextView
+            android:id="@+id/tv_act_survey_details_lbl_sqs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Preguntas"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_survey_details_survey_data" />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_act_survey_details_sqs"
             android:layout_width="0dp"
@@ -191,8 +202,9 @@
             android:layout_marginEnd="16dp"
             android:scrollbars="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/div_act_survey_details_survey_data" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_survey_details_lbl_sqs" />
 
         <View
             android:id="@+id/div_act_survey_details_sqs"
@@ -206,6 +218,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rv_act_survey_details_sqs" />
 
+        <TextView
+            android:id="@+id/tv_act_survey_details_sqs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Encuentros"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_survey_details_sqs" />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_act_survey_details_ses"
             android:layout_width="0dp"
@@ -215,8 +238,9 @@
             android:layout_marginEnd="16dp"
             android:scrollbars="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/div_act_survey_details_sqs" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_survey_details_sqs" />
 
         <View
             android:id="@+id/div_act_survey_details_ses"
@@ -231,6 +255,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rv_act_survey_details_ses" />
 
+        <TextView
+            android:id="@+id/tv_act_survey_details_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Personas"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_survey_details_ses" />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_act_survey_details_people"
             android:layout_width="0dp"
@@ -242,7 +277,8 @@
             android:scrollbars="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/div_act_survey_details_ses" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_survey_details_people" />
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

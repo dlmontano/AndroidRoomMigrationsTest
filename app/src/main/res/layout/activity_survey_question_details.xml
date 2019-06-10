@@ -223,6 +223,17 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_act_sq_details_latest_refresh_date" />
 
         <TextView
+            android:id="@+id/tv_act_sq_details_lbl_survey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Encuesta"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_sq_details_sq_data" />
+
+        <TextView
             android:id="@+id/tv_act_sq_details_lbl_survey_id2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -310,7 +321,7 @@
             android:layout_marginTop="8dp"
             android:text="TextView"
             app:layout_constraintStart_toEndOf="@+id/tv_act_sq_details_lbl_latest_refresh_date"
-            app:layout_constraintTop_toBottomOf="@+id/div_act_sq_details_sq_data" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_sq_details_lbl_survey" />
 
         <TextView
             android:id="@+id/tv_act_sq_details_survey_start_date"
@@ -394,6 +405,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_act_sq_details_survey_latest_refresh_date" />
 
+        <TextView
+            android:id="@+id/tv_act_sq_details_sqccs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Opciones codificadas"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_sq_details_survey_data" />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_act_sq_details_sqccs"
             android:layout_width="0dp"
@@ -404,7 +426,7 @@
             android:scrollbars="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/div_act_sq_details_survey_data" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_sq_details_sqccs" />
 
         <View
             android:id="@+id/div_act_sq_details_sqccs"
@@ -418,17 +440,31 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rv_act_sq_details_sqccs" />
 
+        <TextView
+            android:id="@+id/tv_act_sq_details_sqas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Respuestas"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_sq_details_sqccs" />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_act_sq_details_sqas"
             android:layout_width="0dp"
-            android:layout_height="179dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
+            android:scrollbars="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/div_act_sq_details_sqccs" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_sq_details_sqas"
+            app:layout_constraintVertical_bias="0.0" />
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

@@ -42,13 +42,13 @@
 
             <TextView
                 android:id="@+id/tv_card_view_sqa_question_id"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lbl_question_id" />
 
             <TextView
                 android:id="@+id/tv_card_view_sqa_answer_value"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lbl_answer_value" />
 

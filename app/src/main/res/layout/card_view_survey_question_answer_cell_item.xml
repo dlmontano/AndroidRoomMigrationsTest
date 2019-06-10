@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_card_view_sqa_cell_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_item_id" />
+
+    <TextView
+        android:id="@+id/tv_card_view_sqa_cell_survey_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_encounter_id" />
+
+    <TextView
+        android:id="@+id/tv_card_view_sqa_cell_question_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_question_id" />
+
+    <TextView
+        android:id="@+id/tv_card_view_sqa_cell_answer_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_answer_value" />
+</LinearLayout>

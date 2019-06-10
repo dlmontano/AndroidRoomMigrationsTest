@@ -222,17 +222,29 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_act_person_details_latest_refresh_date" />
 
+        <TextView
+            android:id="@+id/tv_act_person_details_lbl_surveys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Encuestas"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_person_details_person_data" />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_act_person_details_surveys"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:scrollbars="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/div_act_person_details_person_data" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_person_details_lbl_surveys" />
 
         <View
             android:id="@+id/div_act_person_details_surveys"
@@ -246,6 +258,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rv_act_person_details_surveys" />
 
+        <TextView
+            android:id="@+id/tv_act_person_details_lbl_ses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Encuentros"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_person_details_surveys" />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_act_person_details_ses"
             android:layout_width="0dp"
@@ -253,9 +276,11 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
+            android:scrollbars="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/div_act_person_details_surveys" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_person_details_lbl_ses" />
 
         <View
             android:id="@+id/div_act_person_details_ses"
@@ -269,6 +294,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rv_act_person_details_ses" />
 
+        <TextView
+            android:id="@+id/tv_act_person_details_lbl_bpms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Mediciones P.A."
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_person_details_ses" />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_act_person_details_bpms"
             android:layout_width="0dp"
@@ -278,8 +314,9 @@
             android:layout_marginEnd="16dp"
             android:scrollbars="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/div_act_person_details_ses" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_person_details_lbl_bpms" />
 
         <View
             android:id="@+id/div_act_person_details_bpms"
@@ -293,6 +330,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rv_act_person_details_bpms" />
 
+        <TextView
+            android:id="@+id/tv_act_person_details_lbl_hrms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Mediciones F.C."
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/div_act_person_details_bpms" />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_act_person_details_hrms"
             android:layout_width="0dp"
@@ -304,8 +352,10 @@
             android:scrollbars="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/div_act_person_details_bpms" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_act_person_details_lbl_hrms"
+            app:layout_constraintVertical_bias="1.0" />
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
