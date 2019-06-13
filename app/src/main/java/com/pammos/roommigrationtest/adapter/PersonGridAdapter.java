@@ -14,7 +14,8 @@ import com.pammos.roommigrationtest.model.Person;
 import java.util.Date;
 import java.util.List;
 
-public class PersonListAdapter extends RecyclerView.Adapter<PersonListAdapter.PersonRowViewHolder> {
+public class PersonGridAdapter
+        extends RecyclerView.Adapter<PersonGridAdapter.PersonCellViewHolder> {
 
     //region Fields
 
@@ -28,8 +29,7 @@ public class PersonListAdapter extends RecyclerView.Adapter<PersonListAdapter.Pe
 
     //region Constructor
 
-    public PersonListAdapter(@NonNull Context context) {
-
+    public PersonGridAdapter(@NonNull Context context) {
 
         this.context = context;
 
@@ -44,15 +44,15 @@ public class PersonListAdapter extends RecyclerView.Adapter<PersonListAdapter.Pe
 
     @NonNull
     @Override
-    public PersonRowViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public PersonCellViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = inflater.inflate(R.layout.card_view_person_row_item, parent, false);
 
-        return new PersonRowViewHolder(view);
+        return new PersonCellViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull PersonRowViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull PersonCellViewHolder holder, int position) {
 
         if (peopleList != null) {
             Person person = peopleList.get(position);
@@ -103,11 +103,9 @@ public class PersonListAdapter extends RecyclerView.Adapter<PersonListAdapter.Pe
         notifyDataSetChanged();
     }
 
-    //endregion
-
     //region ViewHolder class
 
-    public class PersonRowViewHolder extends RecyclerView.ViewHolder {
+    public class PersonCellViewHolder extends RecyclerView.ViewHolder {
 
         private final TextView tvUUID;
         private final TextView tvDocumentId;
@@ -116,16 +114,16 @@ public class PersonListAdapter extends RecyclerView.Adapter<PersonListAdapter.Pe
         private final TextView tvBirthDate;
         private final TextView tvGender;
 
-        public PersonRowViewHolder(@NonNull View itemView) {
+        public PersonCellViewHolder(@NonNull View itemView) {
 
             super(itemView);
 
-            tvUUID = itemView.findViewById(R.id.tv_card_view_person_person_uuid);
-            tvDocumentId = itemView.findViewById(R.id.tv_card_view_person_person_document_id);
-            tvFirstName = itemView.findViewById(R.id.tv_card_view_person_first_name);
-            tvFirstLastName = itemView.findViewById(R.id.tv_card_view_person_last_name);
-            tvBirthDate = itemView.findViewById(R.id.tv_card_view_person_birth_date);
-            tvGender = itemView.findViewById(R.id.tv_card_view_person_gender);
+            tvUUID = itemView.findViewById(R.id.tv_card_view_person_cell_uuid);
+            tvDocumentId = itemView.findViewById(R.id.tv_card_view_person_cell_document_id);
+            tvFirstName = itemView.findViewById(R.id.tv_card_view_person_cell_first_name);
+            tvFirstLastName = itemView.findViewById(R.id.tv_card_view_person_cell_first_last_name);
+            tvBirthDate = itemView.findViewById(R.id.tv_card_view_person_cell_birth_date);
+            tvGender = itemView.findViewById(R.id.tv_card_view_person_cell_gender);
         }
     }
 
